@@ -1172,7 +1172,7 @@ function download_to_file(url, file_name)
           }
           ssssys = ali[math.random(#ali)]
           if not redis:get("KLISH:ID") then
-          sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,'𖣤 ɴᴀᴍᴇ 𓄹𓄼 '..Namei..' .\n 𖣤 ᴜѕᴇʀɴᴀᴍᴇ 𓄹𓄼   '..UserNameID..' .\n𖥪 ᴍѕɢѕ 𓄹𓄼   '..msgs..' .\n𖥧 ѕᴛᴀᴛѕ 𓄹𓄼   '..msg.TheRank..' .\n𖦼 ʏᴏᴜʀ ɪᴅ 𓄹𓄼  '..msg.sender_user_id_..' .\n✰ ᴄʜ ᴇʟɪɴ 𓄹𓄼    @xclawx .\n┄─━━◉━━─┄',dl_cb,nil)
+          sendPhoto(msg.chat_id_,msg.id_,data.photos_[0].sizes_[1].photo_.persistent_id_,'𖣤 ɴᴀᴍᴇ 𓄹𓄼 '..Namei..' .\n 𖣤 ᴜѕᴇʀɴᴀᴍᴇ 𓄹𓄼   '..UserNameID..' .\n 𖥪 ᴍѕɢѕ 𓄹𓄼   '..msgs..' .\n 𖥧 ѕᴛᴀᴛѕ 𓄹𓄼   '..msg.TheRank..' .\n 𖦼 ʏᴏᴜʀ ɪᴅ 𓄹𓄼  '..msg.sender_user_id_..' .\n ✰ ᴄʜ ᴇʟɪɴ 𓄹𓄼    @xclawx .\n ┄─━━◉━━─┄',dl_cb,nil)
           else
           Text = redis:get("KLISH:ID")
           Text = Text:gsub('IDGET',msg.sender_user_id_)
